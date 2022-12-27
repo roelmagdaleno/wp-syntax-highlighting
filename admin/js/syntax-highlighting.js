@@ -23,7 +23,6 @@ __webpack_require__.r(__webpack_exports__);
 
 function SyntaxHighlightingEdit(_ref) {
   let {
-    clientId,
     attributes,
     setAttributes
   } = _ref;

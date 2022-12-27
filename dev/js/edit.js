@@ -13,7 +13,7 @@ import {
 	ToggleControl,
 } from "@wordpress/components";
 
-export default function SyntaxHighlightingEdit( { clientId, attributes, setAttributes } ) {
+export default function SyntaxHighlightingEdit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
 	const {
 		content,
