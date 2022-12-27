@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name:       Syntax Highlighting by Torchlight
+ * Plugin Name:       Syntax Highlighting powered by Torchlight
  * Plugin URI:        https://roelmagdaleno.com
- * Description:       A Gutenberg block that syntax highlights your code by using Torchlight API.
+ * Description:       A Gutenberg block that syntax highlights your code powered by Torchlight API.
  * Version:           0.1.0
  * Requires at least: 5.0
  * Requires PHP:      7.4

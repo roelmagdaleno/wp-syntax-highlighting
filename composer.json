@@ -1,6 +1,6 @@
 {
-    "name": "roelmagdaleno/syntax-highlighting",
-    "description": "Gutenberg block that syntax highlights your code by using Torchlight API.",
+    "name": "roelmagdaleno/wp-syntax-highlighting",
+    "description": "A Gutenberg block that syntax highlights your code powered by Torchlight API.",
     "version": "0.1.0",
     "license": "MIT",
     "require": {
