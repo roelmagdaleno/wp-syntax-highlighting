@@ -1,0 +1,15 @@
+{
+    "name": "roelmagdaleno/syntax-highlighting",
+    "description": "Torchlight is a VS Code-compatible syntax highlighter that requires no JavaScript, supports every language, every VS Code theme, line highlighting, git diffing, and more.",
+    "version": "0.1.0",
+    "license": "MIT",
+    "require": {
+        "roelmagdaleno/wp-settings-page-fields": "^0.1.1",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Roel\\WP\\SyntaxHighlighting\\": "src"
+        }
+    }
+}
