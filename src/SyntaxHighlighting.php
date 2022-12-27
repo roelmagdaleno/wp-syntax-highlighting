@@ -20,10 +20,22 @@ class SyntaxHighlighting {
 		( new Settings() )->hooks();
 	}
 
+	/**
+	 * Enqueue the assets.
+	 * Only load the assets when contains the `core/code` block.
+	 *
+	 * @since 0.1.0
+	 */
 	public function enqueue_assets() {
+		global $post;
+
+		if ( ! $post || ! has_block( 'core/code', $post ) ) {
+			return;
+		}
+
 		wp_enqueue_style(
 			'torchlight-css',
-			plugin_dir_url( __DIR__ ) . 'public/css/torchlight.css',
+			plugin_dir_url( __DIR__ ) . 'public/css/torchlight.min.css',
 			null,
 			SHT_VERSION
 		);
