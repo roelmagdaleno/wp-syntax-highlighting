@@ -46,7 +46,7 @@ class GutenbergBlock {
 		}
 
 		wp_localize_script( $this->script, 'SHT_DATA', array(
-			'theme' => $settings['theme'] ?? 'github-dark',
+			'theme' => $settings['theme'] ?? SHT_DEFAULT_THEME,
 		) );
 	}
 

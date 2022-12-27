@@ -28,12 +28,13 @@ class API {
 		$search  = array( '<br>' );
 		$replace = array( "\n" );
 		$content = str_replace( $search, $replace, $content );
+		$theme   = $attributes['theme'] ?? $settings['theme'] ?? SHT_DEFAULT_THEME;
 
 		$body = array(
 			'blocks'  => array(
 				array(
 					'language' => $attributes['language'] ?? 'plaintext',
-					'theme'    => $attributes['theme'] ?? 'github-dark',
+					'theme'    => $theme,
 					'code'     => $content,
 				),
 			),
