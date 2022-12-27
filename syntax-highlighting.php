@@ -3,7 +3,7 @@
 /**
  * Plugin Name:       Syntax Highlighting by Torchlight
  * Plugin URI:        https://roelmagdaleno.com
- * Description:       Torchlight is a VS Code-compatible syntax highlighter that requires no JavaScript, supports every language, every VS Code theme, line highlighting, git diffing, and more.
+ * Description:       A Gutenberg block that syntax highlights your code by using Torchlight API.
  * Version:           0.1.0
  * Requires at least: 5.0
  * Requires PHP:      7.4

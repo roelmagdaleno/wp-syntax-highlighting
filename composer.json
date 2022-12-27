@@ -1,6 +1,6 @@
 {
     "name": "roelmagdaleno/syntax-highlighting",
-    "description": "Torchlight is a VS Code-compatible syntax highlighter that requires no JavaScript, supports every language, every VS Code theme, line highlighting, git diffing, and more.",
+    "description": "Gutenberg block that syntax highlights your code by using Torchlight API.",
     "version": "0.1.0",
     "license": "MIT",
     "require": {
