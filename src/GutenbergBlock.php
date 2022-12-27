@@ -99,6 +99,7 @@ class GutenbergBlock {
 	 * block changes another transient will be created and expire in one month.
 	 *
 	 * @since  0.1.0
+	 * @since  0.2.0   Include new lines in regex pattern.
 	 *
 	 * @param  array    $attributes   The block attributes.
 	 * @param  string   $content      The block content.
@@ -113,7 +114,7 @@ class GutenbergBlock {
 			return $cached_content;
 		}
 
-		$pattern = '/<pre(?:.*?)><code(?:.*?)>(.*?)<\/code><\/pre>/m';
+		$pattern = '/<pre(?:.*?)><code(?:.*?)>(.*?)<\/code><\/pre>/ms';
 		preg_match( $pattern, $content, $matches );
 
 		if ( empty( $matches ) || empty( $matches[1] ) ) {

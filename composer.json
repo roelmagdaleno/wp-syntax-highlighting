@@ -1,7 +1,7 @@
 {
     "name": "roelmagdaleno/wp-syntax-highlighting",
     "description": "A Gutenberg block that syntax highlights your code powered by Torchlight API.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "license": "MIT",
     "require": {
         "roelmagdaleno/wp-settings-page-fields": "^0.1.1",
