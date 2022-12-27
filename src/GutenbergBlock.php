@@ -85,7 +85,26 @@ class GutenbergBlock {
 		register_block_type( $block, $args );
 	}
 
-	public function render( $attributes, $content ) {
+	/**
+	 * Render the block.
+	 *
+	 * The code block will contain the syntax highlighted.
+	 *
+	 * Inside this method will run the syntax highlighting API
+	 * functionality but if the code is already cached then return the
+	 * cached version.
+	 *
+	 * The cached version is stored in a transient key and the key is
+	 * a mix from the attributes and the content. So, next time the code
+	 * block changes another transient will be created and expire in one month.
+	 *
+	 * @since  0.1.0
+	 *
+	 * @param  array    $attributes   The block attributes.
+	 * @param  string   $content      The block content.
+	 * @return string                 The block content.
+	 */
+	public function render( array $attributes, string $content ) : string {
 		$encoded_data   = wp_json_encode( $attributes ) . $content;
 		$transient_key  = 'syntax_highlighting_' . md5( $encoded_data );
 		$cached_content = get_transient( $transient_key );

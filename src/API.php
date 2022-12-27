@@ -14,6 +14,22 @@ class API {
 	 */
 	protected string $endpoint = 'https://api.torchlight.dev/highlight';
 
+	/**
+	 * Syntax highlight the passed `$content`.
+	 *
+	 * The `$content` is a piece of code. It also accepts attributes
+	 * where you can edit the final code view.
+	 *
+	 * The attributes are from the Torchlight API.
+	 *
+	 * @since  0.1.0
+	 *
+	 * @link   https://torchlight.dev/docs/options
+	 *
+	 * @param  string   $content      The code to syntax highlight.
+	 * @param  array    $attributes   The Torchlight API attributes.
+	 * @return array|WP_Error         The highlighted code or WP_Error if fails.
+	 */
 	public function highlight( string $content, array $attributes ) {
 		if ( empty( $content ) ) {
 			return new WP_Error( 'There is no content to highlight.' );
